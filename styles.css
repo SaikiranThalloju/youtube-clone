@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: none;
+}
+ 
+ body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: black;
+
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color:#303030;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    z-index: 100;
+    
+
+}
+.nav-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+}
+.nav-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.search{
+    border: none;
+    background-color: black;
+    height: 60%;
+    width: 90%;
+    color: white;
+    border-radius: 10px;
+}
+  /* .container{
+    display: flex;
+    width: 100%;
+    height: 98%;
+    position: relative;
+     height: 50vw; 
+     box-sizing: border-box;
+      overflow: hidden; 
+}  */
+
+.Profile-pic{
+    background-color:rgba(255, 0, 0, 0.87) ; 
+    
+    color: white;
+    border: none;
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+ .nav-right{
+    width: 20% ;
+    display: flex;
+    /* gap: 5%; */
+    justify-content: space-evenly;
+    align-items:center;
+}
+.sidebar{
+    position: fixed;
+    display: flex;
+    top: 60px;
+    flex: 5;
+    left: 0;
+    flex-direction: column;
+    gap: 5px;
+      min-width: 250px; 
+      width: 250px;  
+    height: calc(100vh - 60px);
+    background-color: black;
+    padding-right: 10px;
+}
+/* .sidebar a{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+} */
+
+.links{
+    display: flex;
+    /* justify-content: center; */
+    align-items: end;
+    width: 100%;
+    /* max-height: fit-content; */
+    text-decoration: none;
+    color: white;
+     gap: 20px; 
+    padding: 5px 15px;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.links:hover{
+    background: rgba(240, 255, 255, 0.237);
+}
+.active{
+    /* background: rgba(240, 255, 255, 0.237); */
+    /* color: black; */
+
+}
+ .video-card-container{
+    flex: 7;
+    background-color: black;
+     margin-top: 80px;
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    display: flex;
+    flex-wrap: wrap;
+     color: white;
+     gap: 5%; 
+    overflow-x: hidden;
+    
+ }
+ .videoCard{
+    width: 30%;
+    /* height: 10%; */
+    height: fit-content;
+    justify-self: end;
+    display: flex;
+    gap: 3%;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: #303030; */
+    /* border-radius: 15px; */
+    /* background-color: white ;
+    color: #303030; */
+    margin-bottom: 15px;
+}  
+
+.videoCard>img{
+width: 100%;
+height: 200px;
+object-fit: contain;
+object-fit: cover;
+
+}
+
+.channel img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-right: 10px;
+    background-color: azure;
+}
+.channel{
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    gap: 3%;
+    height: 30%;
+    /* justify-content: space-between; */
+    width: 100%;
+}
+
+.channelInfo{
+    margin-left: 60px;
+}
+.filters{
+    background-color: black;
+    padding-top: 20px;
+    margin-left: 250px;
+    max-height: 60px;
+    position: sticky;
+    top: 60px;
+}
+/* .filters::-webkit-scrollbar{
+    display: none;
+} */
+.filter-options{
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #303030;
+    border: 1px solid #dbdbdb;
+    text-transform: capitalize;
+    margin-right: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
